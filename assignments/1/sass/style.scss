@@ -1,1 +1,360 @@
 @import 'reset';
+@import 'variables';
+@import 'grid';
+@import 'reset';
+@import 'variables';
+@import 'grid';
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+$column-width: 60px;
+$gutter-width: 20px;
+$gutterColumn-width: 80px;
+$leading-height: 24px;
+$font-color: #444;
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: $leading-height*.6;
+    font-color: $font-color;
+    top: $leading-height*2;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: $leading-height*2.5;
+    font-color: $font-color;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: $leading-height*1.5;
+    font-color: $font-color;
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*9.96;
+    left: $gutterColumn-width*3.435;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: $leading-height*.92;
+    font-color: $font-color;
+}
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: $leading-height*.9;
+    font-color: $font-color;
+}
+h5 {
+    position: absolute;
+    font-weight: 400;
+    font-size: $leading-height*1;
+    letter-spacing: $leading-height*.007;
+    font-color: $font-color;
+    top: $leading-height*70;
+    left: $gutterColumn-width*2.238;
+}
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: $leading-height - 1;
+    font-color: $font-color;
+    position: absolute;
+    top: $leading-height*90.81;
+    left: $gutterColumn-width*5.889;
+    max-width: 500px;
+}
+#sitecontainer {
+    right: 0px;
+    max-width: $width-body;
+    background: #000000;
+}
+#large-banner-image {
+    position: absolute;
+    width: 1600px;
+    height: 700px;
+}
+// =================================================================================
+// Header 
+// =======================================================================
+#header {
+    margin: 0 auto;
+    max-width: $width-body;
+}
+#logo {
+    margin: 0 auto;
+    width: $gutterColumn-width*10;
+}
+#arrow {
+    position: absolute;
+    z-index: 1;
+    top: $leading-height*13.75;
+    left: $gutterColumn-width*7.079;
+}
+#focus-icon {
+    position: absolute;
+    top: $leading-height*4.8;
+    left: $gutterColumn-width*5.9;
+    display: inline;
+}
+#title {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*5;
+    left: $gutterColumn-width*7;
+    text-align: center;
+    display: inline;
+}
+// =================================================================================
+// Body "features"
+// =======================================================================
+#iphone {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*16.8;
+    left: $gutterColumn-width*5.15;
+}
+#container1 {
+    position: absolute;
+    top: $leading-height*31.5;
+    max-width: $gutterColumn-width*4;
+    padding: {
+        left: .8 * $gutterColumn-width;
+        right: 23px;
+        bottom: $leading-height*1.9;
+    }
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: $leading-height*.65;
+        line-height: $leading-height*1.05;
+        padding: {
+            top: $leading-height*.8;
+            right: 23px;
+        }
+    }
+}
+#container2 {
+    position: absolute;
+    top: $leading-height*38.56;
+    max-width: $gutterColumn-width*4;
+    padding: {
+        left: .79 * $gutterColumn-width;
+        right: 23px;
+        bottom: $leading-height*2;
+    }
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: $leading-height*.65;
+        line-height: $leading-height*1;
+        padding: {
+            top: $leading-height*.999;
+            right: 23px;
+        }
+    }
+}
+#container3 {
+    position: absolute;
+    top: $leading-height*31.542;
+    left: $gutterColumn-width*10.05;
+    max-width: $gutterColumn-width*4;
+    letter-spacing: 0px;
+    padding: {
+        left: .2 * $gutterColumn-width;
+        right: 23px;
+        bottom: $leading-height*2;
+    }
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: $leading-height*.65;
+        line-height: $leading-height*1;
+        padding: {
+            top: $leading-height*.9;
+            right: 23px;
+        }
+    }
+}
+#container4 {
+    position: absolute;
+    top: $leading-height*38.57;
+    left: $gutterColumn-width*10.05;
+    max-width: $gutterColumn-width*4;
+    letter-spacing: 0px;
+    padding: {
+        left: .2 * $gutterColumn-width;
+        right: 23px;
+        bottom: $leading-height*2;
+    }
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: $leading-height*.65;
+        line-height: $leading-height*1;
+        padding: {
+            top: $leading-height*.999;
+            right: 23px;
+        }
+    }
+}
+// =================================================================================
+// Media
+// =======================================================================
+#media {
+    position: relative;
+    top: $leading-height* 49.8;
+    background: #e3e3e3;
+    padding: {
+        bottom: $leading-height*17.3;
+    }
+}
+#mediatext {
+    position: absolute;
+    top: $leading-height*52.3;
+    max-width: $gutterColumn-width*15;
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: $leading-height*.6;
+        line-height: $leading-height*1;
+        padding: {
+            top: $leading-height*.9;
+            right: 23px;
+        }
+    }
+}
+#apple {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*59.3;
+    left: $gutterColumn-width*.01;
+}
+#android {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*59.3;
+    left: $gutterColumn-width*1.10;
+}
+#windows {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*59.3;
+    left: $gutterColumn-width*2.26;
+}
+#video-image {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*52.2;
+    left: $gutterColumn-width*8.52;
+}
+#play {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*62.4;
+    left: $gutterColumn-width*8.76;
+    display: inline;
+    z-index: 1;
+}
+#video-play-bar {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*62.5;
+    left: $gutterColumn-width*9.85;
+    z-index: 1;
+}
+// =================================================================================
+// Footer
+// =======================================================================
+#testimonials {
+    position: absolute;
+    top: $leading-height*72.11;
+    left: $gutterColumn-width*6.55;
+    span {
+        font-weight: 600;
+    }
+}
+#social {
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: $leading-height*.65;
+        font-color: $font-color;
+        position: absolute;
+        top: $leading-height*92.63;
+        left: $gutterColumn-width*4.33;
+    }
+}
+#collage {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*75.1;
+}
+#active-person {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    top: $leading-height*78.42;
+    left: $gutterColumn-width*11.44;
+}
+#twitter {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*94.4;
+    left: $gutterColumn-width*5.8;
+}
+#facebook {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*94.4;
+    left: $gutterColumn-width*6.35;
+}
+#pinterest {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*94.4;
+    left: $gutterColumn-width*6.9;
+}
+#google-plus {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*94.4;
+    left: $gutterColumn-width*7.45;
+}
+#linkedin {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*94.4;
+    left: $gutterColumn-width*8;
+}
+#youtube {
+    position: absolute;
+    margin: 0 auto;
+    top: $leading-height*94.4;
+    left: $gutterColumn-width*8.55;
+}
+#contactcontainer {
+    position: absolute;
+    max-height: $leading-height*10;
+    top: $leading-height*98.3;
+    display: inline;
+    background: #e3e3e3;
+    padding: {
+        top: $leading-height*1;
+        bottom: $leading-height*4.3;
+        right: $gutterColumn-width*15;
+    }
+}
+#contact {
+    p {
+        position: absolute;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        font-size: $leading-height*.7;
+        font-color: $font-color;
+        top: $leading-height*100.75;
+        right: $gutterColumn-width*3.9;
+        word-spacing: $leading-height*.7;
+        letter-spacing: $leading-height*.03
+    }
+}
